@@ -50,6 +50,8 @@ async def test_all(hosts: list = None):
             for host in [
                 'localhost:1337',
                 '155.138.158.45',
+                'mmfood.ca',
+                'www.mmfood.ca'
                 # '2001:19f0:b001:f77:5400:04ff:fe1c:f19a'
             ]
             for protocol in [
@@ -70,7 +72,7 @@ async def test_all(hosts: list = None):
           f'\t[{"Test Complete".upper()}]\n' \
           f'\t{result}\n' \
           f'\tTook [{perf_counter() - t1:.2f}]s'
-    log.info(msg)
+    log.debug(msg)
     return msg
 
 
