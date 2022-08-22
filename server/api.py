@@ -7,6 +7,7 @@ from fastapi.routing import Mount
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+from utils.root import get_project_root
 
 """
 Get favicon MM logo, and for just logo.
@@ -14,7 +15,7 @@ Do About US page first.
 """
 
 routes = [
-    Mount(f'/static', StaticFiles(directory='static'), name='static')
+    Mount(f'/static', StaticFiles(directory=f'{get_project_root()}/server/static'), name='static')
 ]
 templates = Jinja2Templates(directory="templates")
 app = FastAPI(routes=routes)
