@@ -34,7 +34,7 @@ async def home(request: Request):
     # return
     _ts = f"{perf_counter() - t1:.7f}s"
     headers = {'X-Timer': _ts}
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(f"/index.html", {"request": request})
 
 
 async def live_check() -> JSONResponse:
