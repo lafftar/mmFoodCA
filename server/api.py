@@ -17,7 +17,7 @@ Do About US page first.
 routes = [
     Mount(f'/static', StaticFiles(directory=f'{get_project_root()}/server/static'), name='static')
 ]
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory=f"{get_project_root()}/server/templates")
 app = FastAPI(routes=routes)
 
 
