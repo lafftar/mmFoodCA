@@ -5,4 +5,4 @@ src.json
 src.html
 venv/
 server/raw_template/*
-server/static/*
+#server/static/*
