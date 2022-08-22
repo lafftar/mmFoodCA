@@ -1,0 +1,8 @@
+**__pycache__**
+.idea
+logs
+src.json
+src.html
+venv/
+server/raw_template/*
+server/static/*
