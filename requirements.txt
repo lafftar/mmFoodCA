@@ -4,3 +4,6 @@ beautifulsoup4~=4.11.1
 colorama~=0.4.5
 uvicorn~=0.18.2
 fastapi~=0.79.1
+
+# imports not caught by pyCharm
+jinja2
